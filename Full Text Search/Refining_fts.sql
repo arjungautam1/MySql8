@@ -1,0 +1,1 @@
+SELECT id, MATCH (title,content,author) AGAINST ('traveling to parks') as score FROM news WHERE MATCH (title,content,author) AGAINST ('dahal nepal') > 0 ORDER BY score DESC;
